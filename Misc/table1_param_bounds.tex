@@ -1,0 +1,29 @@
+\begin{table}[htbp]
+  \centering
+  \caption{Input parameter bounds for AASM Benchmark Case 3, adapted from \citet{bekemeyer2025}.}
+  \label{tab:param_bounds}
+  \begin{tabular}{llcc}
+    \hline
+    \textbf{Parameter} & \textbf{Symbol} & \textbf{Lower Bound} & \textbf{Upper Bound} \\
+    \hline
+    Mach number & $M$ & 0.2 & 0.7 \\
+    Angle of attack & $\alpha$ (deg) & $-3.0$ & 5.0 \\
+    Reynolds number & $Re$ & $1\times10^6$ & $6.5\times10^6$ \\
+    CST1 (shared) & $X_{u,1} = X_{l,1}$ & 0.0644 & 0.1932 \\
+    CST2 (upper) & $X_{u,2}$ & 0.0688 & 0.2064 \\
+    CST3 (upper) & $X_{u,3}$ & 0.0961 & 0.2883 \\
+    CST4 (upper) & $X_{u,4}$ & 0.0961 & 0.2882 \\
+    CST5 (upper) & $X_{u,5}$ & 0.1010 & 0.3030 \\
+    CST6 (lower) & $X_{l,2}$ & 0.0680 & 0.2039 \\
+    CST7 (lower) & $X_{l,3}$ & 0.1126 & 0.3377 \\
+    CST8 (lower) & $X_{l,4}$ & 0.0381 & 0.1143 \\
+    CST9 (lower) & $X_{l,5}$ & $-0.0586$ & $-0.0195$ \\
+    \hline
+  \end{tabular}
+  \begin{tablenotes}
+    \small
+    \item CST1 is shared between upper and lower surfaces.
+    \item Designs are derived from the RAE 2822 baseline using CST perturbation.
+    \item 597 total samples (497 train, 100 test) generated using a Sobol sequence.
+  \end{tablenotes}
+\end{table}
