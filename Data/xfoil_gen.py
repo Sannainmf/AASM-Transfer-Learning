@@ -25,9 +25,9 @@ from math import comb
 # USER CONFIGURATION — Update these paths for your system
 # ============================================================================
 
-XFOIL_EXE = r"C:\Users\areen\Downloads\XFOIL6.99\xfoil.exe"
-OUTPUT_DIR = Path(r"C:\Users\areen\Documents\xfoil_transfer_learning")
-TEMP_DIR = Path(r"C:\Users\areen\Documents\xfoil_transfer_learning\temp_xfoil")
+XFOIL_EXE = os.environ.get("XFOIL_EXE", "xfoil")  # path to the XFOIL executable
+OUTPUT_DIR = Path(__file__).resolve().parent  # Data/
+TEMP_DIR = OUTPUT_DIR.parent / "temp_xfoil"
 
 # Number of samples to generate
 N_SAMPLES = 3000

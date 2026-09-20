@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+temp_xfoil/
+*.pt
+*.pth
+Data/xfoil_dataset_v2_summary.json
